@@ -22,11 +22,12 @@ public class TipCalculator extends Application{
         Parent root = FXMLLoader.load(getClass().getResource("ModifiedTipCalculator.fxml"));
 
         Scene scene = new Scene(root);
+        // Call Tip Calculator FXML FIle
         stage.setTitle("Tip Calculator");
         stage.setScene(scene);
         stage.show();
     }
-
+    // Launch GUI Controller
     public static void main(String[] args) {
         launch(args);
     }
