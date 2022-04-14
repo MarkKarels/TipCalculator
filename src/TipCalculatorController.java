@@ -1,3 +1,12 @@
+/**
+ * Mark Karels
+ * CSC 331 Lab 7
+ * The controller for the GUI in the modified tip calculator
+ * param: None
+ * return: None
+ * Adjusted to include # of people and divided total per person
+ */
+
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.text.NumberFormat;
@@ -37,9 +46,11 @@ public class TipCalculatorController {
     void calculateButtonPressed(ActionEvent event) {
         try{
             BigDecimal amount = new BigDecimal(amountTextField.getText());
+            // Included number of people block for user input
             BigDecimal people = new BigDecimal(numOfPeopleTextField.getText());
-            BigDecimal tip = amount.multiply(tipPercentage).divide(people);
-            BigDecimal total = amount.add(tip.multiply(people));
+            BigDecimal tip = amount.multiply(tipPercentage);
+            // Displays total per person owed based on total + tip divided by num of people
+            BigDecimal total = (amount.add(tip)).divide(people);
 
             tipTextField.setText(currency.format(tip));
             totalTextField.setText(currency.format(total));

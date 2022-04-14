@@ -5,10 +5,14 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 /**
+ * Mark Karels
+ * CSC 331 Lab 7
  * (Enhanced Tip Calculator App) Modify the Tip Calculator app to
  * allow the user to enter the number of people in the party. Calculate and
  * display the amount owed by each person if the bill were to be split evenly
  * among the party members.
+ * param: None
+ * return: None
  */
 
 public class TipCalculator extends Application{

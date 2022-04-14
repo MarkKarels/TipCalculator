@@ -26,8 +26,8 @@
       <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#calculateButtonPressed" text="Calculate" GridPane.columnIndex="1" GridPane.rowIndex="5" />
       <Label text="Amount" />
       <Label fx:id="tipPercentageLabel" text="15%" GridPane.rowIndex="2" />
-      <Label text="Tip/Person" GridPane.rowIndex="3" />
-      <Label text="Total" GridPane.rowIndex="4" />
+      <Label text="Tip" GridPane.rowIndex="3" />
+      <Label text="Total/Person" GridPane.rowIndex="4" />
       <Slider fx:id="tipPercentageSlider" blockIncrement="5.0" max="30.0" value="15.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
       <TextField fx:id="amountTextField" GridPane.columnIndex="1" />
       <TextField fx:id="numOfPeopleTextField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
